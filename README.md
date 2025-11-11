@@ -7,9 +7,9 @@
 
 ## 📁 구성 파일
 
-| 파일명 | 설명 |
-| `best_mlp.keras` | 학습 완료된 MLP 모델 (Keras native 포맷) |
-| `scaler.pkl` | 입력 정규화용 StandardScaler 객체 |
+| 파일명 | 설명 |<br>  
+| `best_mlp.keras` | 학습 완료된 MLP 모델 (Keras native 포맷) | <br>  
+| `scaler.pkl` | 입력 정규화용 StandardScaler 객체 |<br>  
 | `label_map.json` | 라벨 인덱스 → 감정 이름 매핑 정보 |
 
 ---
