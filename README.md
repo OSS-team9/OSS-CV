@@ -52,11 +52,11 @@
 
 ※ 위 설정을 변경하면 입력 특징 분포가 달라져 모델 성능이 저하될 수 있습니다.
 
-[ Face Detection ] 
+**[ Face Detection ]**
 
 min_detection_confidence = 0.5
 
-[ FaceMesh]
+**[ FaceMesh ]**
 
 static_image_mode=True,
 max_num_faces=1,
@@ -68,23 +68,23 @@ min_detection_confidence=0.5
 
 ```text
 OSS-CV/
-├─ model/              # 학습된 MLP 모델(.keras), StandardScaler(.pkl) 등
+├─ model/ # 학습된 MLP 모델(.keras), StandardScaler(.pkl) 등
 │  ├─ (best)mlp_v2.keras
 │  ├─ (best)mlp_v2.pkl
 │  └─ ...
-├─ label/              # 감정 라벨 인덱스 관련 파일
+├─ label/ # 감정 라벨 인덱스 관련 파일
 │  ├─ labels_기쁨.npy
 │  ├─ labels_당황.npy
 │  └─ ...
-├─ train/              # 학습 코드
+├─ train/ # 학습 코드
 │  ├─ EfficientNet.py  # EfficientNet 학습 코드
-│  └─ MLP.py           # MLP 학습 코드
-├─ inference/          # 추론/서비스 코드
-│  ├─ classifier.py    # 최종 추론 모듈
-│  └─ test_predict.py  # 로컬 테스트용
-├─ etc/                # 실험 · 분석 · 전처리 · 시각화 등
-│  ├─ MLP_preprocessing.py      # MLP 모델용 데이터 전처리
-│  ├─ choose_bad_files.py       # 깨진/불량 이미지 삭제
-│  ├─ validate_image_model.py   # EfficientNet 등 이미지 모델 평가 & confusion matrix
-│  └─ visualize_mlp_matrix.py   # MLP 모델 confusion matrix 시각화
+│  └─ MLP.py # MLP 학습 코드
+├─ inference/ # 추론/서비스 코드
+│  ├─ classifier.py # 최종 추론 모듈
+│  └─ test_predict.py # 로컬 테스트용
+├─ etc/ # 실험 · 분석 · 전처리 · 시각화 등
+│  ├─ MLP_preprocessing.py # MLP 모델용 데이터 전처리
+│  ├─ choose_bad_files.py # 깨진/불량 이미지 삭제
+│  ├─ validate_image_model.py # EfficientNet 등 이미지 모델 평가 & confusion matrix
+│  └─ visualize_mlp_matrix.py # MLP 모델 confusion matrix 시각화
 └─ README.md
