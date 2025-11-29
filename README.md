@@ -37,7 +37,7 @@
 
 ## 🧩 전처리 파이프라인
 
-1. 얼굴 이미지가 업로드
+1. 얼굴 이미지 업로드
 2. MediaPipe Face Detection으로 얼굴 bounding box 추출
 3. bounding box 주변으로 padding_ratio=0.3 만큼 확장하여 crop
 4. crop된 얼굴 이미지를 MediaPipe FaceMesh에 입력
