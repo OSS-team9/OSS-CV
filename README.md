@@ -1,5 +1,3 @@
-# OSS-CV
-
 이 모델은 **MediaPipe FaceMesh (478개 랜드마크)** 데이터를 입력으로 받아
 
 **7가지 감정 클래스(슬픔, 기쁨, 분노, 불안, 당황, 상처, 중립)** 중 하나를 예측합니다.
@@ -73,6 +71,7 @@ from restore_scaler import load_scaler
 scaler = load_scaler("mlp_v2_scaler.json")
 
 features_scaled = scaler.transform(features)  
+...
 
 ---
 
