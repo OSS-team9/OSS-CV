@@ -66,6 +66,16 @@ min_detection_confidence=0.5
 
 ---
 
+### 🔧 StandardScaler 복원 
+
+```python
+from restore_scaler import load_scaler
+scaler = load_scaler("mlp_v2_scaler.json")
+
+features_scaled = scaler.transform(features)  
+
+---
+
 ```text
 OSS-CV/
 ├─ model/ # 학습된 MLP 모델(.keras), StandardScaler(.pkl) 등
@@ -88,3 +98,4 @@ OSS-CV/
 │  ├─ validate_image_model.py # EfficientNet 등 이미지 모델 평가 & confusion matrix
 │  └─ visualize_mlp_matrix.py # MLP 모델 confusion matrix 시각화
 └─ README.md
+
