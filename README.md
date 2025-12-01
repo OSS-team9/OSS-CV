@@ -71,7 +71,7 @@ from restore_scaler import load_scaler
 scaler = load_scaler("mlp_v2_scaler.json")
 
 features_scaled = scaler.transform(features)  
-...
+```
 
 ---
 
@@ -90,6 +90,7 @@ OSS-CV/
 │  └─ MLP.py # MLP 학습 코드
 ├─ inference/ # 추론/서비스 코드
 │  ├─ classifier.py # 최종 추론 모듈
+│  ├─ restore_scaler.py # scaler 변환 코드(pkl_to_json)
 │  └─ test_predict.py # 로컬 테스트용
 ├─ etc/ # 실험 · 분석 · 전처리 · 시각화 등
 │  ├─ MLP_preprocessing.py # MLP 모델용 데이터 전처리
@@ -97,4 +98,4 @@ OSS-CV/
 │  ├─ validate_image_model.py # EfficientNet 등 이미지 모델 평가 & confusion matrix
 │  └─ visualize_mlp_matrix.py # MLP 모델 confusion matrix 시각화
 └─ README.md
-
+```
